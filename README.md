@@ -30,7 +30,7 @@ Clone the Repository
 
 bash
 Copy code
-git clone https://github.com/yourusername/ai-enabled-car-parking.git
+git clone https://github.com/yourusername/ai-enabled-car-parking-using-opencv-.git
 cd ai-enabled-car-parking
 Create a Virtual Environment
 
