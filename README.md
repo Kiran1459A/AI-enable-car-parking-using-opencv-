@@ -1,36 +1,79 @@
-AI-Enabled Car Parking System using OpenCV: Design and Implementation
-Overview
-This project aims to develop an AI-enabled car parking system using OpenCV, which can efficiently manage parking spaces and provide real-time information to users. The system will utilize computer vision techniques to detect available parking slots, optimize allocation, and enhance the overall parking experience.
-System Design
-1. Image Capture
-Camera Installation: Install cameras at strategic locations in the parking area to capture images of parking slots.
-Image Quality: Ensure high-quality images with sufficient resolution to enable accurate object detection.
-2. Image Processing
-OpenCV Library: Utilize the OpenCV library for image processing, including image filtering, thresholding, and edge detection.
-Object Detection: Implement object detection algorithms (e.g., YOLOv8) to identify vehicles in the captured images.
-Parking Slot Detection: Detect available parking slots by analyzing the images and identifying empty spaces.
-3. Real-Time Information
-Database Integration: Integrate the system with a database to store information about available parking slots.
-Real-Time Updates: Provide real-time updates to users about available parking slots through a user-friendly interface (e.g., mobile app or digital signage).
-4. Parking Slot Allocation
-Optimization Algorithm: Implement an optimization algorithm to allocate parking slots efficiently, minimizing congestion and reducing parking time.
-Priority Allocation: Allocate parking slots based on priority (e.g., proximity to the entrance, accessibility for people with disabilities).
-5. User Interface
-Mobile App: Develop a mobile app for users to find available parking slots, receive directions to the allocated slot, and pay for parking fees.
-Digital Signage: Install digital signage at the parking area to display real-time information about available parking slots.
-Implementation
-1. Hardware Requirements
-Cameras: Install high-quality cameras with sufficient resolution and field of view to capture images of parking slots.
-Computing System: Utilize a computing system with sufficient processing power and memory to run the OpenCV algorithms and manage the database.
-2. Software Requirements
-OpenCV Library: Install the OpenCV library and necessary dependencies for image processing and object detection.
-Database Management System: Choose a suitable database management system (e.g., MySQL, PostgreSQL) to store and manage parking slot information.
-Mobile App Development: Develop the mobile app using a suitable framework (e.g., React Native, Flutter) and integrate it with the database and OpenCV algorithms.
-3. Testing and Deployment
-Testing: Conduct thorough testing of the system to ensure accurate object detection, efficient parking slot allocation, and seamless user experience.
-Deployment: Deploy the system in a real-world parking area and monitor its performance, making adjustments as necessary.
-Advantages and Future Scope
-Efficient Parking: The system optimizes parking slot allocation, reducing congestion and parking time.
-Real-Time Information: Provides users with real-time information about available parking slots, enhancing their parking experience.
-Scalability: The system can be easily scaled up or down depending on the size of the parking area.
-Future Integration: The system can be integrated with other smart city infrastructure, such as traffic management systems, to create a more efficient and connected urban environment.
+
+AI-Enabled Car Parking System Using OpenCV 🚗🅿️
+Welcome to the AI-Enabled Car Parking System repository! This project leverages OpenCV and computer vision techniques to detect and monitor car parking spaces in real-time.
+
+Table of Contents
+Introduction
+Features
+Installation
+Usage
+Project Structure
+Contributing
+License
+Introduction
+The AI-Enabled Car Parking System is designed to automate the process of detecting vacant and occupied parking spaces. Using OpenCV, the system processes video feeds from surveillance cameras, identifies parking spaces, and determines their occupancy status in real-time. This can be particularly useful for smart parking solutions in urban areas, shopping malls, and other facilities with parking lots.
+
+Features ✨
+Real-time Detection: Continuously monitors parking spaces and updates their status.
+OpenCV Integration: Utilizes OpenCV for image processing and computer vision tasks.
+Scalability: Can be adapted to different parking lot layouts and sizes.
+Visual Output: Displays the parking lot with marked parking spaces and their status (occupied or vacant).
+Installation 🛠️
+Prerequisites
+Python 3.7 or higher
+OpenCV 4.5 or higher
+NumPy
+Matplotlib (for visualizing results)
+Other dependencies listed in requirements.txt
+Steps
+Clone the Repository
+
+bash
+Copy code
+git clone https://github.com/yourusername/ai-enabled-car-parking.git
+cd ai-enabled-car-parking
+Create a Virtual Environment
+
+bash
+Copy code
+python -m venv venv
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+Install Dependencies
+
+bash
+Copy code
+pip install -r requirements.txt
+Usage 🚀
+Prepare the Video Feed
+
+Ensure you have a video feed or a recorded video file of the parking lot.
+
+Configure Parking Space Coordinates
+
+Modify the config/parking_spaces.json file to include the coordinates of the parking spaces in your video feed.
+
+Run the System
+
+bash
+Copy code
+python main.py --video path_to_your_video.mp4
+The system will process the video feed and display the parking lot with the status of each parking space.
+
+Project Structure 📂
+main.py: The main script to run the parking detection system.
+utils.py: Utility functions for image processing and parking space detection.
+config/parking_spaces.json: Configuration file to define parking space coordinates.
+requirements.txt: List of dependencies required for the project.
+README.md: This README file.
+Contributing 🤝
+We welcome contributions to enhance the functionality and features of the AI-Enabled Car Parking System. If you are interested in contributing, please follow these steps:
+
+Fork the repository.
+Create a new branch (git checkout -b feature-branch).
+Make your changes and commit them (git commit -m 'Add new feature').
+Push to the branch (git push origin feature-branch).
+Create a pull request.
+Please ensure your code follows the project's coding standards and includes appropriate tests.
+
+License 📄
+This project is licensed under the MIT License. See the LICENSE file for details.
